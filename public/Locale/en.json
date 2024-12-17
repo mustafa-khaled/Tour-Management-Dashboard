@@ -1,0 +1,23 @@
+{
+  "general": {
+    "arabic": "Arabic",
+    "english": "English",
+    "yes": "Yes",
+    "cancel": "Cancel",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "bookings": "Bookings",
+    "rooms": "Rooms",
+    "guests": "Guests",
+    "tours": "Tours",
+    "admins": "Admins",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "auth": {
+    "logoutMessage": "Are you sure you want to logout?"
+  }
+}

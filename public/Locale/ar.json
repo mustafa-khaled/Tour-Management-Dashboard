@@ -1,0 +1,22 @@
+{
+  "general": {
+    "arabic": "العربيه",
+    "english": "الانجليزيه",
+    "yes": "نعم",
+    "cancel": "الغاء",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "sidebar": {
+    "dashboard": "لوحه التحكم",
+    "bookings": "الحجوزات",
+    "guests": "الضيوف",
+    "settings": "الاعدادات",
+    "logout": "تسجيل خروج",
+    "tours": "الرحلات",
+    "admins": "المسؤولين"
+  },
+  "auth": {
+    "logoutMessage": "هل انت متأكد انك تريد تسجيل الخروج"
+  }
+}

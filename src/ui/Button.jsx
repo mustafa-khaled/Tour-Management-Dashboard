@@ -2,20 +2,34 @@ export default function Button({
   children,
   type = "button",
   onClick,
-  variation = "colorBrand",
-  Font = "text-base font-bold h-[45px]",
-  disabled,
+  variant = "primary",
+  className = "",
+  disabled = false,
 }) {
+  const baseClasses = `
+    w-full rounded-md border text-base font-bold h-[45px] 
+    transition-all text-bgColor disabled:cursor-not-allowed
+    disabled:border-slate-400 disabled:bg-slate-400
+  `;
+
+  const variants = {
+    primary: `
+      bg-colorBrand hover:bg-opacity-80 border-none
+      ${disabled ? "" : "hover:opacity-90"}
+    `,
+    secondary: `
+      text-darkB border-colorBrand bg-colorGrey2 
+      ${disabled ? "" : "hover:border-colorBrand hover:text-bgColor hover:bg-colorBrand"}
+    `,
+  };
+
   return (
     <button
       onClick={onClick}
       type={type}
       disabled={disabled}
-      className={`w-full rounded-md border ${Font} text-bgColor transition-all ${
-        variation === "secondary" && !disabled
-          ? `border-darkB text-darkB bg-colorGrey2 hover:border-colorBrand ${!disabled && "hover:text-bgColor hover:bg-colorBrand"}`
-          : `bg-colorBrand ${!disabled && "hover:bg-opacity-[0.8]"}`
-      } ${disabled && "cursor-not-allowed border-slate-400 bg-slate-400"}`}
+      aria-disabled={disabled}
+      className={`${baseClasses} ${variants[variant]} ${className}`}
     >
       {children}
     </button>

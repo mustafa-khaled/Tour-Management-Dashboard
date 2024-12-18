@@ -18,6 +18,20 @@
     "logout": "Logout"
   },
   "auth": {
-    "logoutMessage": "Are you sure you want to logout?"
+    "logoutMessage": "Are you sure you want to logout?",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "fieldRequired": "Field is required",
+    "invalidEmail": "Invalid email",
+    "existMail": "Email already exist",
+    "loginSuccess": "Login successfully",
+    "loginFailed": "Failed to login",
+    "invalidEmailOrPassword": "Invalid email or password"
+  },
+  "admins": {
+    "addAdmin": "Add a new admin",
+    "successCreate": "Admin create successfully",
+    "failedCreate": "Failed to create admin"
   }
 }

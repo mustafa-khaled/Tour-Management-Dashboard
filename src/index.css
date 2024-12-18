@@ -58,6 +58,10 @@
   .action-style {
     @apply flex h-[30px] w-[30px] items-center justify-center rounded-md bg-colorGrey p-[5px] text-xl;
   }
+
+  .form-title {
+    @apply my-3 text-xl uppercase;
+  }
 }
 
 .links-list ul li > a.active {

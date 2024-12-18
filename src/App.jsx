@@ -13,6 +13,7 @@ const Guests = lazy(() => import("./pages/Guests"));
 const Admins = lazy(() => import("./pages/Admins"));
 const Settings = lazy(() => import("./pages/Settings"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+const Login = lazy(() => import("./pages/Login"));
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             </Route>
 
             <Route path="*" element={<PageNotFound />} />
+            <Route path="login" element={<Login />} />
           </Routes>
         </Suspense>
       </BrowserRouter>

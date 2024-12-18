@@ -54,11 +54,11 @@ function Window({ children, name }) {
     <div>
       <div
         className={`fixed left-0 top-0 z-[102] h-full w-full bg-gray-300/10 backdrop-blur-sm`}
-      ></div>
+      />
 
       <div className="fixed left-0 top-0 z-[103] h-full w-full">
         <div
-          className="fixed left-[50%] top-[50%] z-50 max-h-[90vh] w-[90%] translate-x-[-50%] translate-y-[-50%] overflow-auto rounded-lg bg-colorGrey2 p-[15px] shadow-md md:w-[750px] md:p-[30px] lg:w-[800px]"
+          className="fixed left-[50%] top-[50%] z-50 max-h-[90vh] w-[90%] translate-x-[-50%] translate-y-[-50%] overflow-auto rounded-lg bg-colorGrey2 p-[15px] shadow-md md:p-[30px] lg:w-[900px]"
           ref={ref}
         >
           <button
@@ -67,7 +67,9 @@ function Window({ children, name }) {
           >
             <FaTimes className="text-xl" />
           </button>
-          <div>{cloneElement(children, { onCloseModal: close })}</div>
+          <div className="text-textColor">
+            {cloneElement(children, { onCloseModal: close })}
+          </div>
         </div>
       </div>
     </div>,

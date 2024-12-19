@@ -5,7 +5,9 @@
     "yes": "Yes",
     "cancel": "Cancel",
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "image": "Image",
+    "actions": "Actions"
   },
   "sidebar": {
     "dashboard": "Dashboard",
@@ -33,5 +35,19 @@
     "addAdmin": "Add a new admin",
     "successCreate": "Admin create successfully",
     "failedCreate": "Failed to create admin"
+  },
+  "tours": {
+    "destination": "Destination",
+    "price": "Price",
+    "discount": "Discount",
+    "filter": {
+      "all": "All",
+      "noDiscount": "No discount",
+      "withDiscount": "With discount",
+      "sortByNameA-Z": "Sort by name A-Z",
+      "sortByNameZ-A": "Sort by name Z-A",
+      "sortByLowPrice": "Sort by low price",
+      "sortByHightPrice": "Sort by hight price"
+    }
   }
 }

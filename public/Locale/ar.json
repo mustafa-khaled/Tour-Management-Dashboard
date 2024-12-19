@@ -5,7 +5,9 @@
     "yes": "نعم",
     "cancel": "الغاء",
     "previous": "السابق",
-    "next": "التالي"
+    "next": "التالي",
+    "image": "الصوره",
+    "actions": "العمليات"
   },
   "sidebar": {
     "dashboard": "لوحه التحكم",
@@ -32,5 +34,19 @@
     "addAdmin": "اضافه مسؤول جديد",
     "successCreate": "تم إنشاء المسؤول بنجاح",
     "failedCreate": "فشل في إنشاء المسؤول"
+  },
+  "tours": {
+    "destination": "الوجهه",
+    "price": "السعر",
+    "discount": "الخصم",
+    "filter": {
+      "all": "الكل",
+      "noDiscount": "لا يوجد خصم",
+      "withDiscount": "مع خصم",
+      "sortByNameA-Z": "فرز حسب الاسم من الألف إلى الياء",
+      "sortByNameZ-A": "فرز حسب الاسم من الياء إلى الألف",
+      "sortByLowPrice": "فرز حسب السعر المنخفض",
+      "sortByHightPrice": "فرز حسب أعلى سعر"
+    }
   }
 }

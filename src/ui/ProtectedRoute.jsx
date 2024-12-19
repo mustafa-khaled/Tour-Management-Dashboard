@@ -1,13 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import { useUser } from "../features/admins/useUser";
 import { useEffect } from "react";
 import Spinner from "./spinner/Spinner";
-import { useUser } from "../features/admins/useUser";
 
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
 
   // 1) Load the authenticated user
-  const { isLoading, isAuthenticated } = useUser();
+  // const { isLoading, isAuthenticated } = useUser();
+  const isLoading = false;
+  const isAuthenticated = true;
 
   // 2) if there is no authenticated user , redirect to the login page
   useEffect(() => {

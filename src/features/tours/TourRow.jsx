@@ -1,4 +1,8 @@
+import { CiEdit } from "react-icons/ci";
+import { MdOutlineRemoveRedEye } from "react-icons/md";
 import Table from "../../ui/Table";
+import CreateEditTour from "./CreateEditTour";
+import DeleteTour from "./DeleteTour";
 
 function TourRow({ tour }) {
   return (
@@ -21,8 +25,16 @@ function TourRow({ tour }) {
         {tour?.destination?.length > 15 && "..."}
       </Table.Cell>
       <Table.Cell>{`${tour?.price}$`}</Table.Cell>
-      <Table.Cell>x</Table.Cell>
-      <Table.Cell>x</Table.Cell>
+      <Table.Cell>{tour?.discount || 0}</Table.Cell>
+      <Table.Cell>
+        <div className="flex items-center gap-3 [&_svg]:rounded-lg [&_svg]:bg-colorGrey [&_svg]:p-[5px] [&_svg]:text-[27px]">
+          <CreateEditTour tourToEdit={tour}>
+            <CiEdit />
+          </CreateEditTour>
+          <MdOutlineRemoveRedEye />
+          <DeleteTour tourId={tour?._id} />
+        </div>
+      </Table.Cell>
     </Table.Row>
   );
 }

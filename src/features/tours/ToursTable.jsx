@@ -13,6 +13,7 @@ function ToursTable() {
   const [searchParams] = useSearchParams();
 
   const { isLoading, totalPages, totalTours, tours } = useTours();
+  console.log(tours);
 
   if (isLoading) return <Spinner />;
   if (!totalTours) return <div>No data</div>;

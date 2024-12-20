@@ -1,15 +1,15 @@
 import Modal from "../../ui/Modal";
 import CreateEditTourForm from "./CreateEditTourForm";
 
-function AddEditAdmin({ children, tourToEdit }) {
+function CreateEditTour({ children, tourToEdit }) {
   return (
     <Modal>
-      <Modal.Open opens="addEditAdmin">{children}</Modal.Open>
-      <Modal.Window name="addEditAdmin">
+      <Modal.Open opens="createEditTour">{children}</Modal.Open>
+      <Modal.Window name="createEditTour">
         <CreateEditTourForm tourToEdit={tourToEdit} />
       </Modal.Window>
     </Modal>
   );
 }
 
-export default AddEditAdmin;
+export default CreateEditTour;

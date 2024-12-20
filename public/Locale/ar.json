@@ -7,7 +7,13 @@
     "previous": "السابق",
     "next": "التالي",
     "image": "الصوره",
-    "actions": "العمليات"
+    "actions": "العمليات",
+    "deleteSuccess": "تم الحذف بنجاح",
+    "deleteFailed": "فشل في الحذف",
+    "createSuccess": "تم الإنشاء بنجاح",
+    "createFailed": "فشل في الإنشاء",
+    "updateSuccess": "تم التحديث بنجاح",
+    "updateFailed": "فشل في التحديث"
   },
   "sidebar": {
     "dashboard": "لوحه التحكم",
@@ -39,6 +45,10 @@
     "destination": "الوجهه",
     "price": "السعر",
     "discount": "الخصم",
+    "createTour": "اضافه رحله جديده",
+    "description": "الوصف",
+    "note": "ملاحظه",
+    "deleteTourMessage": "هل أنت متأكد أنك تريد حذف هذه الرحله؟",
     "filter": {
       "all": "الكل",
       "noDiscount": "لا يوجد خصم",

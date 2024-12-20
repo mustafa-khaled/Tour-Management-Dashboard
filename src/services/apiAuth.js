@@ -34,9 +34,7 @@ export async function getCurrentUser() {
       },
     });
 
-    console.log("response", response);
-
-    return response;
+    return response.data;
   } catch (error) {
     throw error;
   }

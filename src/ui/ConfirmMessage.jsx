@@ -12,7 +12,11 @@ function ConfirmMessage({ onConfirm, message, disabled, onCloseModal }) {
         <Button disabled={disabled} onClick={onConfirm}>
           {t("general.yes")}
         </Button>
-        <Button variation="secondary" onClick={onCloseModal}>
+        <Button
+          variation="secondary"
+          disabled={disabled}
+          onClick={onCloseModal}
+        >
           {t("general.cancel")}
         </Button>
       </div>
